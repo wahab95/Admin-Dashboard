@@ -1,5 +1,41 @@
-ul{
+ul,*{
     list-style: none;
     padding: 0;
     margin: 0;
 }
+/* left side*/
+.container{
+    display: grid;
+    grid: 1fr 3fr / 1fr 5fr;
+    
+}
+.container > div{
+    border: 1px solid black;
+    display: grid;
+}
+.container .dashboard{
+    grid-row: 1 / 3;
+    justify-content:start;
+    text-align: left;
+    border: 1px solid black;
+    
+}
+.container .dashboard > * {
+    border: 1px solid black;
+    
+    
+}
+.container .dashboard > *  > * {
+    border: 1px solid black;
+    display: grid;
+    grid: repeat(auto-fit,1fr) / 1fr ;
+    
+
+}
+.container .dashboard > div > * > *{
+    border: 1px solid black;
+    display: grid;
+    grid: 2fr / 0.5fr 1fr;
+    
+}
+/* left side*/
