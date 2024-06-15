@@ -9,15 +9,23 @@ ul,*{
     grid: 1fr 3fr / 1fr 5fr;
     
 }
-.container > div{
+.container > *{
     border: 1px solid black;
     display: grid;
+    
+}
+.logo{
+    margin-bottom: 10vh;
+    font-size: 1.5em;
+    text-align: center;
 }
 .container .dashboard{
     grid-row: 1 / 3;
-    justify-content:start;
+    grid-column: 1 / 2;
     text-align: left;
     border: 1px solid black;
+    background: rgb(62, 160, 226);
+    color: white;
     
 }
 .container .dashboard > * {
@@ -30,12 +38,17 @@ ul,*{
     display: grid;
     grid: repeat(auto-fit,1fr) / 1fr ;
     
+    
 
 }
 .container .dashboard > div > * > *{
     border: 1px solid black;
     display: grid;
     grid: 2fr / 0.5fr 1fr;
-    
+    cursor: pointer; 
+}
+.container .dashboard > div > * > *:hover{
+    color: red;
 }
 /* left side*/
+/* top-right side */
