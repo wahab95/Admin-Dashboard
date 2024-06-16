@@ -3,7 +3,7 @@ ul,*{
     padding: 0;
     margin: 0;
 }
-/* left side*/
+/* ---- left side ----*/
 .container{
     display: grid;
     grid: 1fr 3fr / 1fr 5fr;
@@ -28,27 +28,32 @@ ul,*{
     color: white;
     
 }
-.container .dashboard > * {
-    border: 1px solid black;
-    
-    
-}
-.container .dashboard > *  > * {
-    border: 1px solid black;
-    display: grid;
-    grid: repeat(auto-fit,1fr) / 1fr ;
-    
-    
-
-}
-.container .dashboard > div > * > *{
-    border: 1px solid black;
-    display: grid;
-    grid: 2fr / 0.5fr 1fr;
-    cursor: pointer; 
-}
+/* logo settings*/
 .container .dashboard > div > * > *:hover{
     color: red;
 }
+.container .dashboard > * {
+    border: 1px solid black;
+    
+}
+.container .dashboard .menu .logo{
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.container .dashboard .menu .logo > *{
+    display: grid;
+    border: 1px solid black;
+    justify-content: start;
+    align-items: center;
+}
+/* logo settings*/
+.container .dashboard .menu .pages{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+
+}
+
 /* left side*/
 /* top-right side */
