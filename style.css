@@ -126,9 +126,7 @@
     justify-content: center;
     align-items: center;
 }
-.head .account #p1{
-    
-}
+
 .head .account img{
     grid-row-start: 1;
     grid-row-end: -3;
